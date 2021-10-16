@@ -1,3 +1,4 @@
+import { IonButton } from '@ionic/react';
 import './InterventionLink.css';
 
 interface ContainerProps { }
@@ -5,8 +6,7 @@ interface ContainerProps { }
 const InterventionLink: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
-      <strong>InterventionLink</strong>
-      <p>Don't Panic! <a rel="noopener noreferrer" href="/help">Get some help</a></p>
+      <IonButton color="danger" shape="round" href="/help">Don't Panic!</IonButton>
     </div>
   );
 };
